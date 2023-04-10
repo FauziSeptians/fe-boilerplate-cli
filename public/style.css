@@ -1,0 +1,121 @@
+body{
+    background-color: whitesmoke;
+}
+
+#kotak_center{
+    background-color: white;
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 260px;
+    border-radius: 50px;
+}
+
+.form-control{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.button_kotak{
+    display: flex;
+    justify-content: center;
+}
+
+.judul{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+
+.btn{
+    width: 200px;
+}
+
+#kotak_thanks{
+    background-color: white;
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 180px;
+    border-radius: 50px;
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+}
+
+#judul_option{
+    margin-bottom: 20px;
+}
+
+#kotak_option{
+    background-color: white;
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 180px;
+    border-radius: 50px;
+    padding: 80px;
+}
+
+.konten{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blueviolet; */
+}
+
+img{
+    /* background-color: brown; */
+    width: 200px;
+    height: 200px;
+}
+
+.kotak_option{
+    border-radius: 20px;
+    width: 40%;
+    background-color: aquamarine;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.konten_karyawan{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.konten_admin{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.admin{
+    border-radius: 20px;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+
+
+
