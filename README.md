@@ -15,16 +15,10 @@
 
 ## 📦 Installation
 
-### Global Installation (Recommended)
+### Global Installation (Must)
 
 ```bash
-npm install -g fe-boilerplate-cli
-```
-
-### Use with npx (No Installation)
-
-```bash
-npx fe-boilerplate-cli my-app
+npm install -g fe-boilerplate
 ```
 
 ---
@@ -38,7 +32,7 @@ npx fe-boilerplate-cli my-app
 fe-boilerplate my-app
 
 # Using npx
-npx fe-boilerplate-cli my-app
+npx fe-boilerplate my-app
 ```
 
 ### 2. Navigate to Your Project
