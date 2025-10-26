@@ -1,0 +1,53 @@
+const { program } = require("commander");
+const { createProject } = require("../lib/index");
+const chalk = require("chalk");
+const { generateFactories } = require("../factories/generatorFactories");
+
+program
+   .name("fe-boilerplate")
+   .version("1.0.0")
+   .description("Generate Frontend boilerplate project")
+   .argument("[project-name]", "Project name")
+   .addHelpText(
+      "after",
+      `
+
+${chalk.cyan("Quick Start:")}
+  ${chalk.gray("$")} fe-boilerplate my-app
+  ${chalk.gray("$")} cd my-app
+  ${chalk.gray("$")} fe-boilerplate g r about
+
+${chalk.cyan("More Info:")}
+  Run ${chalk.white("fe-boilerplate generate --help")} for generator details
+  `
+   )
+   .action(async (projectName) => {
+      await createProject(projectName);
+   });
+
+program
+   .command("generate <type> [name]")
+   .alias("g")
+   .description("Generate code (routes, pages, etc.)")
+   .addHelpText(
+      "after",
+      `
+
+${chalk.cyan("Generator Types:")}
+  ${chalk.white("routes, route, r")}     Generate route in src/app/
+  ${chalk.white(
+     "pages, page, p"
+  )}       Generate page in src/pages/ with "Page" suffix
+
+${chalk.cyan("Examples:")}
+  ${chalk.gray("$")} fe-boilerplate ${chalk.green("g r")} about
+  ${chalk.gray("$")} fe-boilerplate ${chalk.green("g p")} home
+  ${chalk.gray("$")} fe-boilerplate ${chalk.green("generate route")} contact
+  ${chalk.gray("$")} fe-boilerplate ${chalk.green("g page")} dashboard
+  `
+   )
+   .action(async (type, name) => {
+      await generateFactories(type, name);
+   });
+
+program.parse();
