@@ -3,14 +3,11 @@
     "version": "1.0.0",
     "description": "This repo is about to create folder structuring using cli",
     "main": "index.js",
+    "bin": {
+        "fe-boilerplate": "./bin/cli.js"
+    },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "cli": "node bin/cli.js",
-        "test:generate": "cd myapp && node ../bin/cli.js generate routes about",
-        "test:generate-home": "cd myapp && node ../bin/cli.js generate r news",
-        "test:page-test": "cd myapp && node ../bin/cli.js generate p woiii",
-        "test:help": "cd myapp && node ../bin/cli.js --help",
-        "test:generate-help": "cd myapp && node ../bin/cli.js generate --help"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "",
