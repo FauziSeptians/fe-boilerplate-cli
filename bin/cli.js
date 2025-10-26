@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { program } = require("commander");
 const { createProject } = require("../lib/index");
 const chalk = require("chalk");
