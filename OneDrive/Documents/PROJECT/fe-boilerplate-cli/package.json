@@ -1,0 +1,22 @@
+{
+    "name": "fe-boilerplate",
+    "version": "1.0.0",
+    "description": "This repo is about to create folder structuring using cli",
+    "main": "index.js",
+    "bin": {
+        "fe-boilerplate": "./bin/cli.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "commander": "^14.0.2",
+        "degit": "^2.8.4",
+        "inquirer": "^8.2.5",
+        "ora": "^5.4.1"
+    }
+}
