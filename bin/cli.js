@@ -6,8 +6,9 @@ const chalk = require("chalk");
 const { generateFactories } = require("../factories/generatorFactories");
 
 program
-   .name("fe-boilerplate")
+   .name("fe-boilerplate-cli")
    .version("1.0.0")
+   .alias("fe")
    .description("Generate Frontend boilerplate project")
    .argument("[project-name]", "Project name")
    .addHelpText(
@@ -15,12 +16,12 @@ program
       `
 
 ${chalk.cyan("Quick Start:")}
-  ${chalk.gray("$")} fe-boilerplate my-app
+  ${chalk.gray("$")} fe-boilerplate-cli my-app
   ${chalk.gray("$")} cd my-app
-  ${chalk.gray("$")} fe-boilerplate g r about
+  ${chalk.gray("$")} fe-boilerplate-cli g r about
 
 ${chalk.cyan("More Info:")}
-  Run ${chalk.white("fe-boilerplate generate --help")} for generator details
+  Run ${chalk.white("fe-boilerplate-cli generate --help")} for generator details
   `
    )
    .action(async (projectName) => {
@@ -42,10 +43,10 @@ ${chalk.cyan("Generator Types:")}
   )}       Generate page in src/pages/ with "Page" suffix
 
 ${chalk.cyan("Examples:")}
-  ${chalk.gray("$")} fe-boilerplate ${chalk.green("g r")} about
-  ${chalk.gray("$")} fe-boilerplate ${chalk.green("g p")} home
-  ${chalk.gray("$")} fe-boilerplate ${chalk.green("generate route")} contact
-  ${chalk.gray("$")} fe-boilerplate ${chalk.green("g page")} dashboard
+  ${chalk.gray("$")} fe-boilerplate-cli ${chalk.green("g r")} about
+  ${chalk.gray("$")} fe-boilerplate-cli ${chalk.green("g p")} home
+  ${chalk.gray("$")} fe-boilerplate-cli ${chalk.green("generate route")} contact
+  ${chalk.gray("$")} fe-boilerplate-cli ${chalk.green("g page")} dashboard
   `
    )
    .action(async (type, name) => {

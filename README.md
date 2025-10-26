@@ -18,7 +18,7 @@
 ### Global Installation (Must)
 
 ```bash
-npm install -g fe-boilerplate
+npm install -g fe-boilerplate-cli
 ```
 
 ---
@@ -29,10 +29,10 @@ npm install -g fe-boilerplate
 
 ```bash
 # Using global installation
-fe-boilerplate my-app
+fe-boilerplate-cli my-app
 
 # Using npx
-npx fe-boilerplate my-app
+npx fe-boilerplate-cli my-app
 ```
 
 ### 2. Navigate to Your Project
@@ -47,10 +47,10 @@ npm run dev
 
 ```bash
 # Generate a route
-fe-boilerplate g r about
+fe-boilerplate-cli g r about
 
 # Generate a page
-fe-boilerplate g p home
+fe-boilerplate-cli g p home
 ```
 
 ---
@@ -60,14 +60,14 @@ fe-boilerplate g p home
 ### Create Project
 
 ```bash
-fe-boilerplate [project-name]
+fe-boilerplate-cli [project-name]
 ```
 
 Creates a new frontend project from the boilerplate template.
 
 **Example:**
 ```bash
-fe-boilerplate my-awesome-app
+fe-boilerplate-cli my-awesome-app
 ```
 
 If you don't provide a project name, you'll be prompted to enter one.
@@ -77,9 +77,9 @@ If you don't provide a project name, you'll be prompted to enter one.
 ### Generate Code
 
 ```bash
-fe-boilerplate generate <type> [name]
+fe-boilerplate-cli generate <type> [name]
 # or use the alias
-fe-boilerplate g <type> [name]
+fe-boilerplate-cli g <type> [name]
 ```
 
 Generate different types of code files with consistent structure.
@@ -95,9 +95,9 @@ Generate route components in `src/app/` directory (Next.js App Router style).
 **Aliases:** `routes`, `route`, `r`
 
 ```bash
-fe-boilerplate g r about
-fe-boilerplate generate route contact
-fe-boilerplate g routes dashboard
+fe-boilerplate-cli g r about
+fe-boilerplate-cli generate route contact
+fe-boilerplate-cli g routes dashboard
 ```
 
 **Output:**
@@ -128,9 +128,9 @@ Generate page components in `src/pages/` directory with "Page" suffix.
 **Aliases:** `pages`, `page`, `p`
 
 ```bash
-fe-boilerplate g p home
-fe-boilerplate generate page dashboard
-fe-boilerplate g pages settings
+fe-boilerplate-cli g p home
+fe-boilerplate-cli generate page dashboard
+fe-boilerplate-cli g pages settings
 ```
 
 **Output:**
@@ -161,17 +161,17 @@ export default function HomePage() {
 
 ```bash
 # Create new project
-fe-boilerplate my-app
+fe-boilerplate-cli my-app
 cd my-app
 
 # Generate routes
-fe-boilerplate g r about
-fe-boilerplate g r contact
-fe-boilerplate g r blog
+fe-boilerplate-cli g r about
+fe-boilerplate-cli g r contact
+fe-boilerplate-cli g r blog
 
 # Generate pages
-fe-boilerplate g p home
-fe-boilerplate g p dashboard
+fe-boilerplate-cli g p home
+fe-boilerplate-cli g p dashboard
 ```
 ---
 
@@ -179,12 +179,12 @@ fe-boilerplate g p dashboard
 
 ```bash
 # Kebab-case (recommended)
-fe-boilerplate g r contact-us      # → ContactUs.tsx
-fe-boilerplate g p user-profile    # → UserProfilePage.tsx
+fe-boilerplate-cli g r contact-us      # → ContactUs.tsx
+fe-boilerplate-cli g p user-profile    # → UserProfilePage.tsx
 
 # Space-separated (will be converted to kebab-case)
-fe-boilerplate g r "about us"      # → AboutUs.tsx
-fe-boilerplate g p "my settings"   # → MySettingsPage.tsx
+fe-boilerplate-cli g r "about us"      # → AboutUs.tsx
+fe-boilerplate-cli g p "my settings"   # → MySettingsPage.tsx
 ```
 
 ---
@@ -221,11 +221,11 @@ Get help anytime with the `--help` flag:
 
 ```bash
 # Root help
-fe-boilerplate --help
+fe-boilerplate-cli --help
 
 # Generator help
-fe-boilerplate generate --help
-fe-boilerplate g --help
+fe-boilerplate-cli generate --help
+fe-boilerplate-cli g --help
 ```
 
 ---
